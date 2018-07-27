@@ -11,7 +11,7 @@ const request = async () => {
         row.id = 'comp' + i.toString();
         let name = document.createElement('TD');
         let name_url = document.createElement('A');
-        name_url.href = 'comp.html#'+json[i].id.toString();
+        name_url.href = 'comp.html?comp='+json[i].id.toString()+"&class=0";
         name_url.innerText = json[i].name;
         name.appendChild(name_url);
         let organizer = document.createElement('TD');
@@ -21,4 +21,4 @@ const request = async () => {
         document.getElementById('table').appendChild(row);
     }
 };
-const data = request();
+request();
