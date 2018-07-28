@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script src="competition.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <meta charset="UTF-8">
-    <title>Competition</title>
+	<script src="competition.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta charset="UTF-8">
+	<title>Competition</title>
 </head>
+
 <body>
-<h1 align="center" id="name"></h1>
-<div id="buttons">
-    <a id="prev" style="text-align: left;display: block"><--Previous</a>
-    <a id="comp" style="text-align: center;display: block">Competitions</a>
-    <a id="next" style="text-align: right;display: block">Next--></a>
-</div>
-<table id="classes" onload="classes()">
-    <tr id="M"></tr>
-    <tr id="W"></tr>
-</table>
-<table id="table" style="margin-top: 50px">
-    <tr>
-        <th>#</th>
-        <th>Name</th>
-        <th>Time</th>
-    </tr>
-</table>
+	<h1 align="center" id="name"></h1>
+	<table id="buttons">
+		<tr>
+			<td>
+				<a id="prev" style="text-align: left;display: block">
+					<--Previous</a>
+			</td>
+			<td>
+				<a id="comp" style="text-align: center;display: block">Competitions</a>
+			</td>
+			<td>
+				<a id="next" style="text-align: right;display: block">Next--></a>
+			</td>
+		</tr>
+	</table>
+	<table id="classes" onload="classes()">
+		<tr id="M"></tr>
+		<tr id="W"></tr>
+	</table>
+	<table id="table" style="margin-top: 50px">
+		<tr>
+			<th>#</th>
+			<th>Name</th>
+			<th>Time</th>
+		</tr>
+	</table>
 </body>
+
 </html>
