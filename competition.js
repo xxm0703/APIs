@@ -27,7 +27,7 @@ function sort_classes(json) {
         a.innerHTML = json[i]['className'];
         let td = document.createElement("TD");
         td.appendChild(a);
-        if (a.innerText[0] === "W") {
+        if (a.innerText[0] === "W" || a.innerText[0] === "D") {
             document.getElementById("W").appendChild(td);
         } else {
             document.getElementById("M").appendChild(td);
@@ -77,4 +77,3 @@ window.onload = function () {
         )
 
 };
-
